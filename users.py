@@ -22,7 +22,7 @@ import sqlite3
 conn = sqlite3.connect('mydatabase.db')
 cursor = conn.cursor()
 
-# Создаем таблицу, если она еще не существует
+# Создаем  таблицу, если она еще не существует
 cursor.execute('''
 CREATE TABLE IF NOT EXISTS users (
     user_id INTEGER PRIMARY KEY AUTOINCREMENT,
