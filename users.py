@@ -9,8 +9,8 @@ name имя пользователя
 CREATE TABLE users (
     user_id INTEGER PRIMARY KEY AUTOINCREMENT,
     telega_id INTEGER,
-    telega_url TEXT,
-    name TEXT
+    telega_url TEXT  ,
+    name TEXT  NOT NULL
 )
 CREATE UNIQUE INDEX idx_telega_id ON users (telega_id)
 
@@ -27,7 +27,7 @@ cursor.execute('''
 CREATE TABLE IF NOT EXISTS users (
     user_id INTEGER PRIMARY KEY AUTOINCREMENT,
     telega_id INTEGER NOT NULL,
-    telega_url TEXT NOT NULL,
+    telega_url TEXT ,
     name TEXT NOT NULL
 )
 ''')

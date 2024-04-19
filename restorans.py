@@ -8,8 +8,8 @@ address адрес
 
 CREATE TABLE restaurants (
     restaurant_id INTEGER PRIMARY KEY  AUTOINCREMENT,
-    name TEXT,
-    address TEXT
+    name TEXT   NOT NULL,
+    address TEXT  NOT NULL
 );
 
 """
@@ -24,8 +24,8 @@ cursor = conn.cursor()
 cursor.execute('''
 CREATE TABLE restaurants (
     restaurant_id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT,
-    address TEXT
+    name TEXT  NOT NULL,
+    address TEXT  NOT NULL
 );
 ''')
 

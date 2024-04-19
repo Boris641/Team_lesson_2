@@ -1,7 +1,7 @@
 """
 users таблица категорий блюд
 Поля
-category_id   id rfntujhbb
+category_id   id категории
 name имя категории
 descr описание категории
 
