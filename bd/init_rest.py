@@ -25,7 +25,7 @@ def  sel_sql():
     rows = cursor.fetchall()  # Получаем все данные
     for row in rows:
         print(row)
-        conn.close()
+    conn.close()
 
 # для заполнения таблицы
 #add_sql()
