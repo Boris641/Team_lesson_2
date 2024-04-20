@@ -19,7 +19,7 @@ CREATE UNIQUE INDEX idx_telega_id ON users (telega_id)
 import sqlite3
 
 # Подключаемся к базе данных (или создаем новую)
-conn = sqlite3.connect('mydatabase.db')
+conn = sqlite3.connect('../mydatabase.db')
 cursor = conn.cursor()
 
 # Создаем  таблицу, если она еще не существует
